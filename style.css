@@ -1,0 +1,55 @@
+/** General */
+* {
+    font-family: 'Montserrat';
+}
+
+/** eek-navbar */
+.eek-navbar {
+    position: sticky;
+    top: 0;
+}
+
+/** eek-facade */
+.eek-facade {
+    height:90vh;
+    width: 100%;
+}
+
+.eek-facade div {
+    justify-self: center;
+    align-self: center;
+}
+
+.eek-facade__slogan-block {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.eek-facade div h1 {
+    font-size: 3.5em;
+    font-family: 'Montserrat';
+    transition: color 0.3s ease-in-out;
+}
+
+.eek-facade div h1:hover {
+    color: #dd736b;
+}
+
+.eek-facade .eek-facade__figcaption {
+    margin-top: -4.5em;
+    margin-left: 7em;
+}
+
+/** eek-image */
+.eek-image.eek-image--modern-cabin {
+    width: 600px;
+}
+
+/** eek-grid */
+.eek-grid {
+
+}
