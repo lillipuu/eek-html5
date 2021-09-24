@@ -61,6 +61,12 @@
     transition: color 0.3s ease-in-out;
 }
 
+@media (max-width: 991.98px) {
+    .eek-facade div h1 {
+        font-size: 2.5em;
+    }
+}
+
 .eek-facade div h1:hover {
     color: #dd736b;
 }

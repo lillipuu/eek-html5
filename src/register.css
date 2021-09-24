@@ -1,0 +1,7 @@
+/* https://getbootstrap.com/docs/5.1/layout/breakpoints/#min-width */
+@media (min-width: 992px) {
+    .eek-register {
+        margin: 0 auto;
+        width: 50%;
+    }
+ }
