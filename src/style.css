@@ -7,6 +7,32 @@
 .eek-navbar {
     position: sticky;
     top: 0;
+    background-color: white;
+}
+
+.eek-navbar__nav {
+    width: 100%;
+}
+
+/* https://getbootstrap.com/docs/5.1/layout/breakpoints/#min-width */
+
+.eek-navbar__item--right {
+    margin-left: auto;
+}
+
+@media (max-width: 991.98px) {
+    .eek-navbar__item--logout {
+        max-width: max-content;
+        margin-left: auto;
+    }
+    .eek-navbar__item--logout a {
+        margin: 0 1em;
+    }
+}
+
+.eek-navbar__item--logout {
+    background-color: #ea868f;
+    border-radius: 0.5em
 }
 
 /** eek-facade */
