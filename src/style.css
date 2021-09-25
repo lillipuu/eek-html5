@@ -37,7 +37,7 @@
 
 /** eek-facade */
 .eek-facade {
-    height:90vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -81,7 +81,8 @@
     width: 600px;
 }
 
-/** eek-grid */
-.eek-grid {
-
+/** eek-space */
+.eek-space {
+    background-color: #dee2e6;
+    min-height: 100vh;
 }
