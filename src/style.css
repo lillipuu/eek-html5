@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 10;
 }
 
 .eek-navbar__nav {
@@ -77,9 +78,31 @@
 }
 
 /** eek-image */
-.eek-image--modern-cabin {
+.eek-image {
     width: 500px;
 }
+
+.eek-image--space {
+    animation: jiggle 5s alternate infinite;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: translateY(0em);
+    }
+    33% {
+        transform: translateY(-1em);
+    }
+    66% {
+        transform: translateY(1em);
+
+    }
+    100% {
+        transform: translateY(0em);
+    }
+  }
+
+
 
 /** eek-space */
 .eek-space {
