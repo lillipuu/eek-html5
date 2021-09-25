@@ -1,3 +1,10 @@
+/**
+ * Solar system API integration.
+ *
+ * Used API: https://api.le-systeme-solaire.net/swagger/
+ */
+
+
 $(document).ready(async function() {
   const response = await fetch('https://api.le-systeme-solaire.net/rest.php/bodies?filter[0]=isPlanet,cs,1&page=1,5&data=id,englishName,isPlanet,mass,gravity&order=gravity,asc')
     .then(response => response.json());
