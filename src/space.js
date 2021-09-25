@@ -12,7 +12,7 @@ $(document).ready(async function() {
   for (let i = 0; i < response['bodies'].length; i++) {
     const row = `
       <tr>
-        <th class="row">${i + 1}</th>
+        <th>${i + 1}</th>
         <td>${ response['bodies'][i].englishName}</td>
         <td>${ response['bodies'][i].gravity}</td>
       </tr>`
