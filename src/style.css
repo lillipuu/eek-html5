@@ -37,7 +37,7 @@
 
 /** eek-facade */
 .eek-facade {
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
 }
 
@@ -72,13 +72,13 @@
 }
 
 .eek-facade .eek-facade__figcaption {
-    margin-top: -4.5em;
-    margin-left: 7em;
+    padding-top: -4.5em;
+    padding-left: 7em;
 }
 
 /** eek-image */
-.eek-image.eek-image--modern-cabin {
-    width: 600px;
+.eek-image--modern-cabin {
+    width: 500px;
 }
 
 /** eek-space */

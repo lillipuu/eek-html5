@@ -16,6 +16,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/style.css">
   <script src="/src/authService.js"></script>
+  <script src="/src/space.js"></script>
 </head>
 <body>
   <!-- START OF NAVBAR -->
@@ -52,7 +53,7 @@
       <div class="row pt-5">
         <div class="col-12 col-lg-6 order-2 order-lg-1">
           <figure class="eek-facade__figure figure">
-            <img class="eek-image eek-image--modern-cabin" src="/assets/modern-cabin.webp" alt="Modern Cabin by Adam Tarr">
+            <img class="eek-image eek-image--modern-cabin" src="/assets/modern-cabin.png" alt="Modern Cabin by Adam Tarr">
             <figcaption class="eek-facade__figcaption figure-caption">
               Art by <a href="https://dribbble.com/shots/13996921-Modern-Cabin" target="_blank">Adam Tarr</a>
             </figcaption>
@@ -72,7 +73,23 @@
     <div class="container">
       <div class="row pt-5">
         <div class="col-12 col-lg-5 order-2 order-lg-1">
-          <!-- Table example here -->
+          <!-- TABLE -->
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Gravity</th>
+              </tr>
+            </thead>
+            <tbody class="js-planet-body">
+
+            </tbody>
+          </table>
+
+
+
         </div>
         <div class="col-12 col-lg-7 order-1 order-lg-2">
           <figure class="eek-facade__figure figure">
