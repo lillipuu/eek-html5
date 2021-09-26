@@ -81,13 +81,7 @@ class AuthService {
     const expectedUsername = this.getUsername(username);
     const expectedPassword = this.getPassword(username);
 
-    console.log(username);
-    console.log(expectedUsername);
-    console.log(password);
-    console.log(expectedPassword);
-
     if (username === expectedUsername && password === expectedPassword) {
-      console.log('asd');
       window.localStorage.setItem('eek-session', username);
     }
 
@@ -110,9 +104,7 @@ class AuthService {
   }
 }
 
-$(document).ready(function() {
-  const authService = new AuthService();
-
+function updateUI(authService) {
   const session = authService.getSession();
   if (!session) {
     $('.js-logout').hide();
@@ -121,6 +113,15 @@ $(document).ready(function() {
     $('.js-login').hide();
     $('.js-user-info a').text(`Welcome, ${authService.getSession()}!`);
   }
+}
+
+$(document).ready(function() {
+  const authService = new AuthService();
+  // Load Navbar
+  $.get('/components/_navbar.html', async (data) => {
+    $('body').prepend(data);
+    await updateUI(authService);
+});
 
   $('#js-eek-login-form').submit(function(e) {
     e.preventDefault();
