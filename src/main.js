@@ -68,7 +68,7 @@ class AuthService {
   /**
    *
    * @param string username
-   * @param string passwor
+   * @param string password
    */
   login(username, password) {
     const session = this.getSession();
