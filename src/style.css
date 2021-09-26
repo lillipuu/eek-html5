@@ -80,6 +80,7 @@
 /** eek-image */
 .eek-image {
     width: 500px;
+    max-width: 100%;
 }
 
 .eek-image--space {
