@@ -121,7 +121,11 @@ $(document).ready(function() {
   $.get('/components/_navbar.html', async (data) => {
     $('body').prepend(data);
     await updateUI(authService);
-});
+  });
+
+  $.get('/components/_footer.html', (data) => {
+      $('.js-template-footer').after(data);
+  });
 
   $('#js-eek-login-form').submit(function(e) {
     e.preventDefault();
