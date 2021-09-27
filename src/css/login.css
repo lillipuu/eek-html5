@@ -5,3 +5,8 @@
         width: 50%;
     }
  }
+
+.eek-login__column {
+    margin: 0;
+    padding: 1em;
+}

@@ -5,3 +5,8 @@
         width: 50%;
     }
  }
+
+.eek-register__column {
+    margin: 0;
+    padding: 1em;
+}
