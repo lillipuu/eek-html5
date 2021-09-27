@@ -121,6 +121,11 @@ $(document).ready(function() {
   $.get('/components/_navbar.html', async (data) => {
     $('body').prepend(data);
     await updateUI(authService);
+
+    $('.js-logout').on('click', function(e) {
+      authService.logout();
+      window.location.href = window.location.origin;
+    });
   });
 
   $.get('/components/_footer.html', (data) => {
@@ -157,11 +162,6 @@ $(document).ready(function() {
     }
 
     // @todo display error
-  });
-
-  $('.js-logout').on('click', function(e) {
-    authService.logout();
-    window.location.href = window.location.origin;
   });
 });
 
