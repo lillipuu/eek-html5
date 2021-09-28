@@ -83,11 +83,16 @@ class AuthService {
 
     if (username === expectedUsername && password === expectedPassword) {
       window.localStorage.setItem('eek-session', username);
+
+      return {
+        success: true,
+        errorMessage: null,
+      }
     }
 
     return {
-      success: true,
-      errorMessage: null,
+      success: false,
+      errorMessage: 'Invalid username or password!',
     }
   }
 
@@ -142,9 +147,10 @@ $(document).ready(function() {
 
     if (response.success) {
       window.location.href = window.location.origin;
+      return;
     }
 
-    // @todo display error
+    $('.js-login-error').removeClass("d-none");
   });
 
   $('#js-eek-register-form').submit(function(e) {
