@@ -153,6 +153,10 @@ $(document).ready(function() {
     $('.js-login-error').removeClass("d-none");
   });
 
+  $('.js-login-error-hide').click((e) => {
+    $('.js-login-error').addClass('d-none');
+  });
+
   $('#js-eek-register-form').submit(function(e) {
     e.preventDefault();
 
