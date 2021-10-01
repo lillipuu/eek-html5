@@ -25,7 +25,7 @@ function updateNavbar() {
 $(document).ready(function() {
   // Load Navbar
   $.get('/components/_navbar.html', async (data) => {
-    $('body').prepend(data);
+    $('#js-template-navbar').before(data);
     await updateNavbar();
   });
 
