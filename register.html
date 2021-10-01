@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/src/css/register.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="/src/js/main.js"></script>
+  <script src="/src/js/register.js"></script>
 </head>
 <body>
   <!-- Navbar is loaded here via jQuery -->
@@ -25,6 +26,10 @@
       This page stores Your inserted information in browser´s local storage as raw values. <br>
       Do not add real info! This solution is for educational purposes.
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show m-2 d-none" id="js-alert" role="alert">
+      <span></span>
+      <button type="button" class="btn-close" id="js-alert-hide-btn" aria-label="Close"></button>
     </div>
     <form id="js-eek-register-form" class="row p-0 m-0">
       <div class="eek-register__column col-md-6">
