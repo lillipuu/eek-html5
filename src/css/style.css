@@ -43,6 +43,12 @@ body {
     border-radius: 0.5em
 }
 
+/** eek-fig */
+.eek-figure__figcaption {
+    padding-top: -4.5em;
+    padding-left: 7em;
+}
+
 /** eek-facade */
 .eek-facade {
     min-height: 85vh;
@@ -108,12 +114,16 @@ body {
     100% {
         transform: translateY(0em);
     }
-  }
-
-
+}
 
 /** eek-space */
 .eek-space {
     background-color: #dee2e6;
     min-height: 100vh;
+    width: 100%;
+}
+
+.eek-space div {
+    justify-self: center;
+    align-self: center;
 }
