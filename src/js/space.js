@@ -16,6 +16,6 @@ $(document).ready(async function() {
         <td>${ response['bodies'][i].gravity}</td>
       </tr>`
     ;
-    $('.js-planet-body').append(row);
+    $('#js-planet-body').append(row);
   }
 });

@@ -9,14 +9,14 @@ function logout() {
 function updateNavbar() {
   const session = window.localStorage.getItem('eek-session');
   if (!session) {
-    $('.js-logout').hide();
-    $('.js-user-info').hide();
+    $('#js-logout').hide();
+    $('#js-user-info').hide();
   } else {
-    $('.js-login').hide();
-    $('.js-user-info a').text(`Welcome, ${session}!`);
+    $('#js-login').hide();
+    $('#js-user-info a').text(`Welcome, ${session}!`);
   }
 
-  $('.js-logout').on('click', function(e) {
+  $('#js-logout').on('click', function(e) {
     logout();
     window.location.href = window.location.origin;
   });
@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
 
   $.get('/components/_footer.html', (data) => {
-      $('.js-template-footer').after(data);
+      $('#js-template-footer').after(data);
   });
 });
 
