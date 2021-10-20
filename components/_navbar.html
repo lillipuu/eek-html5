@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarToggle">
       <ul class="eek-navbar__nav navbar-nav flex me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link" id="js-link-home" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/blog.html">Blog</a>
+          <a class="nav-link" id="js-link-blog" href="/blog.html">Blog</a>
         </li>
         <li class="nav-item eek-navbar__item eek-navbar__item--right" id="js-login">
-          <a class="nav-link" href="/login.html">Login</a>
+          <a class="nav-link" id="js-link-login" href="/login.html">Login</a>
         </li>
         <li class="nav-item eek-navbar__item eek-navbar__item--right" id="js-user-info">
           <a class="nav-link" href="#"></a>
@@ -25,3 +25,21 @@
     </div>
   </div>
 </nav>
+
+<script>
+(function activeLink() {
+  const path = window.location.pathname.replace(/\.[^/.]+$/, "");
+
+  switch(path) {
+    case '/blog':
+      document.getElementById('js-link-blog').classList.add('active');
+      break;
+    case '/login':
+      document.getElementById('js-link-login').classList.add('active');
+      break;
+    case '/' || '/index':
+      document.getElementById('js-link-home').classList.add('active');
+      break;
+  }
+})();
+</script>
